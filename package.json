@@ -1,9 +1,13 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "@bestminr/node-typescript-boilerplate",
   "version": "0.0.0",
   "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
   "engines": {
-    "node": ">= 12.13 <13"
+    "node": ">= 8 <13"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "tslib": "~1.10.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.21",
@@ -19,16 +23,14 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "clean": "rimraf coverage build tmp",
+    "clean": "rimraf coverage lib tmp",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
+    "dev": "tsc -w",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <github@jakubsynowiec.info>",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "tslib": "~1.10.0"
-  }
+  "author": "Chen Min <chenmin@bestminr.com>",
+  "license": "Apache-2.0"
 }
