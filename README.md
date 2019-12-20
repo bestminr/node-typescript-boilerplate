@@ -30,7 +30,7 @@ npm install
 or download and unzip current `master` branch:
 
 ```sh
-wget https://github.com/bestminr/node-typescript-boilerplate/archive/master.zip -O node-typescript-boilerplate
+wget https://github.com/bestminr/node-typescript-boilerplate/archive/master.zip -O node-typescript-boilerplate.zip
 unzip node-typescript-boilerplate.zip && rm node-typescript-boilerplate.zip
 ```
 
